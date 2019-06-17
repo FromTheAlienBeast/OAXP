@@ -1,0 +1,4 @@
+#Tue Jun 11 13:23:42 CST 2019
+eclipse.preferences.version=1
+validator.Checked=WebRoot/WEB-INF/jsp,WebRoot/ckeditor/ckeditor.js
+validator.Unchecked=

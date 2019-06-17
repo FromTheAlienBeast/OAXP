@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="QingJiaLiuCheng" xmlns="http://jbpm.org/4.4/jpdl">
+   <start name="start1" g="66,16,48,48">
+      <transition name="to task1" to="ShaStudent" g="-52,-22"/>
+   </start>
+   <end name="end1" g="66,348,48,48"/>
+   <task name="ShaStudent" g="28,96,125,52" assignee="#{application.applicant.loginName}">
+      <transition name="to task2" to="ShaFuDaoYuan" g="-52,-22"/>
+   </task>
+   <task name="ShaFuDaoYuan" g="27,180,126,52" assignee="#{application.applicant.loginName}">
+      <transition name="to task3" to="ShaYuanZhang" g="-52,-22"/>
+   </task>
+   <task name="ShaYuanZhang" g="16,264,149,52" assignee="#{application.applicant.loginName}">
+      <transition name="to end1" to="end1" g="-50,-22"/>
+   </task>
+</process>
